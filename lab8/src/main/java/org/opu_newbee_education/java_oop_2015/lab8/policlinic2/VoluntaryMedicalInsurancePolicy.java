@@ -25,7 +25,18 @@ public class VoluntaryMedicalInsurancePolicy extends MedicalInsurancePolicy {
         this.insurancePaid = insurancePaid;
     }
 
-    public VoluntaryMedicalInsurancePolicy(BigDecimal insuranceQuote) {
+    public VoluntaryMedicalInsurancePolicy(int number, String companyName) {
+        super(number, companyName);
+    }
+
+    public VoluntaryMedicalInsurancePolicy(int number, String companyName, BigDecimal insuranceQuote) {
+        super(number, companyName);
         this.insuranceQuote = insuranceQuote;
+    }
+
+    public VoluntaryMedicalInsurancePolicy(int number, String companyName, BigDecimal insuranceQuote, BigDecimal insurancePaid) {
+        super(number, companyName);
+        this.insuranceQuote = insuranceQuote;
+        this.insurancePaid = insurancePaid;
     }
 }
