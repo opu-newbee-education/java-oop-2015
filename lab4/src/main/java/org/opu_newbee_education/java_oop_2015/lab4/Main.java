@@ -23,5 +23,11 @@ public class Main {
             System.out.format("%s against %s. Result: %d\n", option[0], option[1], option[0].clash(option[1]));
         }
 
+
+        TimeStamp timeStamp = new TimeStamp(1, 14);
+        TimeStamp timeStamp2 = new TimeStamp(3, 50);
+        TimeStamp timeStamp3 = timeStamp.add(timeStamp2);
+
+
     }
 }
